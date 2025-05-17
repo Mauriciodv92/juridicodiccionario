@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Nuevo término{% endblock %}
+{% block content %}
+<h2>Nuevo término</h2>
+<form method="post" enctype="multipart/form-data">
+    <input name="termino" type="text" placeholder="Término" required value="{{ termino['termino'] if termino else '' }}">
+    <textarea name="descripcion" placeholder="Descripción" required>{{ termino['descripcion'] if termino else '' }}</textarea>
+    <label>Imagen:</label>
+    <input type="file" name="imagen" accept="image/*">
+    {% if termino and termino.imagen %}
+        <img src="{{ url_for('static', filename='uploads/' ~ termino.imagen) }}" width="100">
+    {% endif %}
+    <label>Video:</label>
+    <input type="file" name="video" accept="video/*">
+    {% if termino and termino.video %}
+        <video src="{{ url_for('static', filename='uploads/' ~ termino.video) }}" width="150" controls></video>
+    {% endif %}
+    <button type="submit">{{ 'Guardar' if termino else 'Agregar' }}</button>
+</form>
+{% endblock %}

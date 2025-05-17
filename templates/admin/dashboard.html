@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Panel de Administración{% endblock %}
+{% block header %}
+<a href="{{ url_for('admin.nuevo') }}">Nuevo término</a> | <a href="{{ url_for('admin.logout') }}">Cerrar sesión</a>
+{% endblock %}
+{% block content %}
+<h2>Administrar términos</h2>
+<table>
+    <tr><th>Término</th><th>Descripción</th><th>Acciones</th></tr>
+    {% for termino in terminos %}
+    <tr>
+        <td>{{ termino['termino'] }}</td>
+        <td>{{ termino['descripcion'] }}</td>
+        <td>
+            <a href="{{ url_for('admin.editar', id=termino['_id']) }}">Editar</a>
+            <a href="{{ url_for('admin.eliminar', id=termino['_id']) }}">Eliminar</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,13 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+header { background: #223; color: #fff; padding: 20px; }
+header h1 a { color: #fff; text-decoration: none; }
+main { max-width: 900px; margin: 30px auto; background: #fff; padding: 25px; border-radius: 10px; }
+form input, form textarea { display: block; width: 100%; margin-bottom: 10px; padding: 8px; }
+form button { background: #336699; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; }
+table { width: 100%; border-collapse: collapse; }
+table, th, td { border: 1px solid #ddd; }
+th, td { padding: 10px; }
+.terminos-lista { list-style: none; padding: 0; }
+.terminos-lista li { margin-bottom: 12px; }
+details { background: #eef; border-radius: 5px; padding: 10px; }
+summary { cursor: pointer; font-weight: bold; }

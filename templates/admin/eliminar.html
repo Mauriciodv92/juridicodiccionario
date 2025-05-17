@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Eliminar término{% endblock %}
+{% block content %}
+<h2>¿Eliminar el término "{{ termino['termino'] }}"?</h2>
+<form method="post">
+    <button type="submit">Confirmar</button>
+    <a href="{{ url_for('admin.dashboard') }}">Cancelar</a>
+</form>
+{% endblock %}

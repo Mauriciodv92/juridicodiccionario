@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Diccionario Jurídico{% endblock %}
+{% block content %}
+<form method="get" action="/">
+    <input type="text" name="q" placeholder="Buscar término" value="{{ query }}">
+    <button type="submit">Buscar</button>
+</form>
+<ul class="terminos-lista">
+    {% for termino in terminos %}
+    <li>
+        <details>
+            <summary>{{ termino['termino'] }}</summary>
+            <p>{{ termino['descripcion'] }}</p>
+            {% if termino['imagen'] %}
+                <img src="{{ url_for('static', filename='uploads/' ~ termino['imagen']) }}" width="200">
+            {% endif %}
+            {% if termino['video'] %}
+                <video src="{{ url_for('static', filename='uploads/' ~ termino['video']) }}" width="320" controls></video>
+            {% endif %}
+        </details>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

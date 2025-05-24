@@ -1,0 +1,67 @@
+
+{% extends "base.html" %}
+{% block title %}Manual de Usuario{% endblock %}
+
+{% block content %}
+<main style="max-width: 1000px; margin: auto; padding: 2rem;">
+  <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">Manual de Usuario - Diccionario Jurídico</h1>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>1. Descripción General</h2>
+    <p>El Diccionario Jurídico es una plataforma web que permite consultar, administrar y gestionar términos jurídicos de forma interactiva y moderna. Esta aplicación ha sido desarrollada para facilitar el acceso a conceptos legales a estudiantes, abogados y ciudadanos en general.</p>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>2. Acceso a la Aplicación</h2>
+    <p>Visita <strong>http://localhost:5000</strong> desde tu navegador para acceder a la aplicación. El sistema cuenta con una interfaz pública de consulta y un panel de administración para usuarios autenticados.</p>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>3. Funcionalidades Públicas</h2>
+    <ul>
+      <li><strong>Consulta de términos:</strong> Permite ver todos los términos almacenados, con imágenes y/o videos si están disponibles.</li>
+      <li><strong>Buscador:</strong> Puedes filtrar términos ingresando una palabra clave.</li>
+      <li><strong>Tema claro/oscuro:</strong> Usa el botón 🌓 para alternar entre ambos estilos visuales.</li>
+    </ul>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>4. Acceso al Panel de Administración</h2>
+    <p>Haz clic en el botón <strong>Login</strong> y accede con tus credenciales. Este panel permite administrar todo el contenido del diccionario.</p>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>5. Funcionalidades del Administrador</h2>
+    <ul>
+      <li><strong>Agregar Término:</strong> Formulario para incluir un nuevo término con descripción, imagen y video.</li>
+      <li><strong>Editar Término:</strong> Modifica la información existente de cualquier término.</li>
+      <li><strong>Eliminar Término:</strong> Permite borrar definitivamente un término.</li>
+      <li><strong>Buscador:</strong> Filtra la lista por término o descripción.</li>
+      <li><strong>Tema claro/oscuro:</strong> Compatible con la vista pública.</li>
+    </ul>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>6. Tecnología Utilizada</h2>
+    <ul>
+      <li>Flask (Python)</li>
+      <li>MongoDB</li>
+      <li>HTML5, CSS3 (Material Design inspirado)</li>
+      <li>Docker y Docker Compose</li>
+    </ul>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>7. Despliegue con Docker</h2>
+    <p>El proyecto está preparado para ejecutarse en contenedores Docker. Ejecuta los siguientes comandos:</p>
+    <pre><code>docker-compose build
+docker-compose up</code></pre>
+    <p>Esto iniciará tanto el backend como la base de datos MongoDB.</p>
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>8. Consideraciones Finales</h2>
+    <p>Este sistema es de código abierto y puede adaptarse a distintas necesidades jurídicas o educativas. Asegúrate de hacer backup de la base de datos si trabajas con datos reales.</p>
+  </section>
+</main>
+{% endblock %}

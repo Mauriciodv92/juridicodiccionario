@@ -10,7 +10,7 @@ class TerminoModel:
 
     @staticmethod
     def obtener_todos():
-        return list(mongo.db.terminos.find())
+        return list(mongo.db.terminos.find().sort("termino", 1))
 
     @staticmethod
     def obtener_por_id(id):
@@ -29,5 +29,9 @@ class TerminoModel:
 
     @staticmethod
     def buscar_terminos(palabra):
-        return list(mongo.db.terminos.find({'termino': {'$regex': palabra, '$options': 'i'}}))
-
+        return list(mongo.db.terminos.find({
+            '$or': [
+                {'termino': {'$regex': palabra, '$options': 'i'}},
+                {'descripcion': {'$regex': palabra, '$options': 'i'}}
+            ]
+        }))

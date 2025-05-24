@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: diccionario_web
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/diccionariojuridico
+
+  mongo:
+    image: mongo:6.0
+    container_name: diccionario_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

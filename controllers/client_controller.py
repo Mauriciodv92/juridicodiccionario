@@ -11,3 +11,7 @@ def index():
     else:
         terminos = TerminoModel.obtener_todos()
     return render_template('client/index.html', terminos=terminos, query=query)
+
+@client.route('/manual_usuario')
+def manual_usuario():
+    return render_template('manual_usuario.html')

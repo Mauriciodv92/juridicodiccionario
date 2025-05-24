@@ -1,0 +1,236 @@
+Abandono del proceso
+Situación en la cual una de las partes deja de impulsar el proceso judicial, lo que puede dar lugar a su terminación.
+
+Abogado
+Profesional del Derecho encargado de representar y asesorar legalmente a las personas ante la ley.
+
+Acción
+Derecho de una persona a acudir ante la justicia para reclamar la tutela de sus derechos.
+
+Acción de tutela
+Mecanismo judicial para la protección inmediata de derechos fundamentales cuando son vulnerados o amenazados.
+
+Acta
+Documento escrito que recoge lo ocurrido y decidido en una reunión o procedimiento judicial.
+
+Actor
+Persona que presenta una demanda en un proceso judicial.
+
+Acusado
+Persona a quien se imputa la comisión de un delito.
+
+Administración de justicia
+Función pública consistente en aplicar las normas jurídicas a los casos concretos por los jueces.
+
+Agravante
+Circunstancia que incrementa la gravedad de un delito y la pena correspondiente.
+
+Amnistía
+Medida legislativa que extingue la responsabilidad penal de ciertos delitos, generalmente de carácter político.
+
+Apelación
+Recurso judicial por el cual una de las partes solicita a un juez superior que revise una decisión.
+
+Auto
+Decisión judicial que no pone fin al proceso, pero resuelve cuestiones procesales.
+
+Bienes
+Objetos o derechos que pueden ser objeto de propiedad.
+
+Caducidad
+Extinción de un derecho por el transcurso del tiempo sin su ejercicio.
+
+Calumnia
+Imputación falsa de un delito hecha con conocimiento de su falsedad.
+
+Capacidad jurídica
+Aptitud para ser titular de derechos y obligaciones.
+
+Citación
+Acto procesal mediante el cual se convoca a una persona a comparecer ante una autoridad judicial.
+
+Competencia
+Ámbito dentro del cual un juez o tribunal puede ejercer su jurisdicción.
+
+Conciliación
+Mecanismo alternativo de resolución de conflictos mediante acuerdo entre las partes.
+
+Código Penal
+Norma legal que establece los delitos y las penas en un país.
+
+Damnificado
+Persona que ha sufrido un perjuicio por un hecho punible o un accidente.
+
+Daño emergente
+Pérdida económica directa que sufre una persona como consecuencia de un hecho dañoso.
+
+Declaración
+Manifestación realizada por una persona ante una autoridad sobre hechos que conoce.
+
+Decomiso
+Medida judicial que implica la pérdida de bienes relacionados con actividades ilícitas.
+
+Defensor público
+Abogado designado por el Estado para representar a personas sin recursos.
+
+Delito
+Conducta tipificada y penada por la ley penal.
+
+Demanda
+Petición formal presentada ante un juez para iniciar un proceso judicial.
+
+Derecho civil
+Rama del derecho que regula las relaciones entre particulares.
+
+Derecho penal
+Rama del derecho que establece los delitos y las penas.
+
+Detención preventiva
+Medida cautelar que consiste en privar de la libertad a una persona mientras se investiga.
+
+Dictamen pericial
+Informe técnico realizado por un perito sobre un tema específico del proceso.
+
+Diligencia judicial
+Acto procesal mediante el cual se practican pruebas u otras actuaciones.
+
+Dolo
+Voluntad consciente de realizar un acto delictivo.
+
+Dueño
+Persona titular del derecho de propiedad sobre un bien.
+
+Edicto
+Publicación oficial para notificar a personas indeterminadas.
+
+Embargo
+Retención legal de bienes por orden judicial.
+
+Emplazamiento
+Acto procesal por el cual se ordena a una persona que comparezca en juicio.
+
+Enriquecimiento sin causa
+Beneficio económico injustificado obtenido a expensas de otra persona.
+
+Escrito de acusación
+Documento mediante el cual la Fiscalía formula cargos ante el juez.
+
+Estafa
+Obtención de un beneficio económico mediante engaño.
+
+Evicción
+Pérdida de un bien por sentencia judicial que reconoce un derecho anterior de un tercero.
+
+Excarcelación
+Liberación de una persona privada de la libertad.
+
+Excepción
+Mecanismo de defensa mediante el cual se impide el avance de una demanda.
+
+Exequátur
+Reconocimiento de una sentencia extranjera en el país.
+
+Fallo
+Decisión tomada por un juez o tribunal.
+
+Fianza
+Garantía económica para asegurar la comparecencia de una persona en juicio.
+
+Fiducia
+Contrato en el que se transmite un bien a un fiduciario para un fin determinado.
+
+Finiquito
+Documento que da por terminado un contrato y salda las cuentas entre las partes.
+
+Flagrancia
+Situación en la que una persona es sorprendida cometiendo un delito.
+
+Fuerza mayor
+Evento imprevisible que impide cumplir una obligación.
+
+Habeas corpus
+Mecanismo judicial para proteger la libertad personal ante detenciones arbitrarias.
+
+Heredero
+Persona que sucede en los derechos y obligaciones de otra tras su muerte.
+
+Honorarios
+Remuneración que recibe un profesional por sus servicios.
+
+Imputación
+Acto mediante el cual se atribuye a una persona la comisión de un delito.
+
+Incapacidad
+Falta de aptitud legal para ejercer derechos por sí mismo.
+
+Indagatoria
+Declaración del imputado en un proceso penal.
+
+Indemnización
+Compensación económica por daño o perjuicio sufrido.
+
+Injuria
+Ofensa que afecta el honor o la dignidad de una persona.
+
+Instrucción penal
+Etapa del proceso penal en la que se recogen pruebas.
+
+Interdicto
+Proceso judicial para proteger la posesión de un bien.
+
+Juez
+Autoridad encargada de administrar justicia.
+
+Juicio
+Proceso mediante el cual se resuelven controversias legales ante un juez.
+
+Jurisdicción
+Poder que tiene un juez para conocer y fallar casos.
+
+Justicia
+Valor que implica dar a cada quien lo que le corresponde.
+
+Laudo arbitral
+Decisión emitida por árbitros en un proceso de arbitraje.
+
+Legítima defensa
+Derecho a repeler una agresión injusta de manera proporcional.
+
+Ley
+Norma jurídica dictada por una autoridad competente.
+
+Litigio
+Controversia legal entre partes que se resuelve judicialmente.
+
+Magistrado
+Juez de un tribunal superior.
+
+Mandato
+Contrato por el cual una persona encarga a otra la realización de un acto jurídico.
+
+Mediación
+Método de resolución de conflictos con la ayuda de un tercero neutral.
+
+Ministerio Público
+Entidad encargada de proteger el interés público y representar al Estado.
+
+Nulidad
+Inexistencia legal de un acto jurídico por vicios o defectos.
+
+Objeción
+Oposición a una prueba o actuación procesal.
+
+Orden de captura
+Mandato judicial para detener a una persona.
+
+Parte
+Persona que participa en un proceso judicial.
+
+Patrimonio
+Conjunto de bienes, derechos y obligaciones de una persona.
+
+Perito
+Persona experta que emite una opinión técnica en un proceso judicial.
+
+Plazo
+Término establecido por la ley o por las partes para cumplir una obligación.

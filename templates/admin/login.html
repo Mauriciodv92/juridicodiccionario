@@ -1,10 +1,46 @@
 {% extends "base.html" %}
-{% block title %}Admin Login{% endblock %}
+{% block title %}Iniciar sesión{% endblock %}
+
 {% block content %}
-<h2>Iniciar sesión</h2>
-<form method="post">
-    <input name="usuario" type="text" placeholder="Usuario" required>
-    <input name="clave" type="password" placeholder="Clave" required>
-    <button type="submit">Ingresar</button>
-</form>
+<main style="display: flex; justify-content: center; align-items: center; min-height: 80vh; padding: 2rem;">
+  <form method="post"
+        style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1.5rem; background-color: var(--card); padding: 2rem; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+
+    <h2 style="text-align: center; margin: 0; font-size: 1.8rem;">Iniciar sesión</h2>
+
+    <!-- Campo Usuario -->
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label for="usuario" style="font-weight: 500;">Usuario</label>
+      <input id="usuario" name="usuario" type="text" required
+             placeholder="Ingresa tu usuario"
+             style="width: 95%; padding: 0.75rem 1rem; border-radius: 8px; font-size: 1rem; border: 1.5px solid var(--card-border); background-color: var(--card); color: var(--text);">
+    </div>
+
+    <!-- Campo Clave -->
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label for="clave" style="font-weight: 500;">Contraseña</label>
+      <input id="clave" name="clave" type="password" required
+             placeholder="Ingresa tu contraseña"
+             style="width: 95%; padding: 0.75rem 1rem; border-radius: 8px; font-size: 1rem; border: 1.5px solid var(--card-border); background-color: var(--card); color: var(--text);">
+    </div>
+
+    <!-- Mensajes de error -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div style="color: #d32f2f; background-color: rgba(211, 47, 47, 0.1); padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.95rem;">
+      {% for message in messages %}
+        <p style="margin: 0;">{{ message }}</p>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <!-- Botón de inicio de sesión -->
+    <button type="submit"
+            style="padding: 0.75rem 1.5rem; border-radius: 8px; background-color: var(--accent); color: white; font-weight: 500; font-size: 1rem; border: none; cursor: pointer;">
+      Entrar
+    </button>
+
+  </form>
+</main>
 {% endblock %}

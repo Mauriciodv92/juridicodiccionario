@@ -32,18 +32,20 @@ def login_required(f):
         if 'admin' not in session:
             return redirect(url_for('admin.login'))
         return f(*args, **kwargs)
-
     return decorated_function
 
 
 @admin.route('/')
 @login_required
 def dashboard():
-    terminos = TerminoModel.obtener_todos()
-    return render_template('admin/dashboard.html', terminos=terminos)
+    query = request.args.get('q', '').strip()
+    if query:
+        terminos = TerminoModel.buscar_terminos(query)
+    else:
+        terminos = TerminoModel.obtener_todos()
+    return render_template('admin/dashboard.html', terminos=terminos, query=query)
 
 
-# ...
 @admin.route('/nuevo', methods=['GET', 'POST'])
 @login_required
 def nuevo():
@@ -72,7 +74,6 @@ def editar(id):
             "termino": request.form['termino'],
             "descripcion": request.form['descripcion']
         }
-        # Solo actualiza si hay archivos nuevos
         if nombre_imagen:
             datos["imagen"] = nombre_imagen
         if nombre_video:

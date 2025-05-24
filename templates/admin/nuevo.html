@@ -1,20 +1,62 @@
 {% extends "base.html" %}
 {% block title %}Nuevo término{% endblock %}
+
 {% block content %}
-<h2>Nuevo término</h2>
-<form method="post" enctype="multipart/form-data">
-    <input name="termino" type="text" placeholder="Término" required value="{{ termino['termino'] if termino else '' }}">
-    <textarea name="descripcion" placeholder="Descripción" required>{{ termino['descripcion'] if termino else '' }}</textarea>
-    <label>Imagen:</label>
-    <input type="file" name="imagen" accept="image/*">
-    {% if termino and termino.imagen %}
-        <img src="{{ url_for('static', filename='uploads/' ~ termino.imagen) }}" width="100">
-    {% endif %}
-    <label>Video:</label>
-    <input type="file" name="video" accept="video/*">
-    {% if termino and termino.video %}
-        <video src="{{ url_for('static', filename='uploads/' ~ termino.video) }}" width="150" controls></video>
-    {% endif %}
-    <button type="submit">{{ 'Guardar' if termino else 'Agregar' }}</button>
-</form>
+<main style="max-width: 800px; margin: auto; padding: 2rem; background-color: var(--bg); border-radius: 16px;">
+  <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem;">Agregar nuevo término</h2>
+
+  <form method="post" enctype="multipart/form-data"
+        style="display: flex; flex-direction: column; gap: 1.5rem; background-color: var(--card); padding: 2rem; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+
+    <!-- Campo Término -->
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label for="termino" style="font-weight: 500; margin-left: 1rem;">Término:</label>
+      <input id="termino" name="termino" type="text" placeholder="Escribe el término..." required
+             style="width: calc(100% - 2rem); margin: 0 1rem; padding: 0.75rem 1rem; border-radius: 8px; border: 1.5px solid var(--card-border); background-color: var(--card); color: var(--text); font-size: 1rem;">
+    </div>
+
+    <!-- Campo Descripción -->
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label for="descripcion" style="font-weight: 500; margin-left: 1rem;">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" placeholder="Escribe la descripción..." required
+                oninput="autoResize(this)"
+                style="width: calc(100% - 2rem); margin: 0 1rem; padding: 0.75rem 1rem; border-radius: 8px; border: 1.5px solid var(--card-border); background-color: var(--card); color: var(--text); font-size: 1rem; resize: none;"></textarea>
+    </div>
+
+    <!-- Campo Imagen -->
+    <div style="margin-left: 1rem;">
+      <label for="imagen" style="font-weight: 500;">Imagen:</label><br>
+      <input id="imagen" type="file" name="imagen" accept="image/*"
+             style="margin-top: 0.5rem; background-color: var(--card); color: var(--text); padding: 0.5rem;">
+    </div>
+
+    <!-- Campo Video -->
+    <div style="margin-left: 1rem;">
+      <label for="video" style="font-weight: 500;">Video:</label><br>
+      <input id="video" type="file" name="video" accept="video/*"
+             style="margin-top: 0.5rem; background-color: var(--card); color: var(--text); padding: 0.5rem;">
+    </div>
+
+    <!-- Botones -->
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+  <button type="submit"
+          style="padding: 0.75rem 1.5rem; border-radius: 8px; background-color: #388e3c; color: white; font-weight: 500; font-size: 1rem; border: none; cursor: pointer;">
+    Agregar término
+  </button>
+  <a href="{{ url_for('admin.dashboard') }}"
+     style="padding: 0.75rem 1.5rem; border-radius: 8px; background-color: #d32f2f; color: white; font-weight: 500; font-size: 1rem; text-decoration: none; display: inline-block;">
+    Cancelar
+  </a>
+</div>
+
+  </form>
+</main>
+
+<!-- Script para expansión automática del textarea -->
+<script>
+  function autoResize(el) {
+    el.style.height = 'auto';
+    el.style.height = (el.scrollHeight) + 'px';
+  }
+</script>
 {% endblock %}

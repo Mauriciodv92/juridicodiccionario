@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Diccionario Jurídico{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>{% block title %}Diccionario Jurídico{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f4f9;
+      --text: #1f1f1f;
+      --primary: #424242;
+      --accent: #005cb2;
+      --card: #ffffff;
+      --card-border: #dcdcdc;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --primary: #1e1e1e;
+      --accent: #90caf9;
+      --card: #1e1e1e;
+      --card-border: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--card);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 1.5rem;
+    }
+
+    .toggle-theme {
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .material-icons {
+      font-size: 1.2rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1><a href="{{ url_for('client.index') }}">Diccionario Jurídico</a></h1>
-        {% block header %}{% endblock %}
-    </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+  <header>
+    <a href="{{ url_for('client.index') }}" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+      <img src="{{ url_for('static', filename='uploads/Logo.png') }}" alt="Diccionario Jurídico" style="height: 85px;">
+      <span style="font-size: 1.2rem; font-weight: bold; color: var(--text);"></span>
+    </a>
+
+    <button class="toggle-theme" onclick="document.body.classList.toggle('dark')">
+      <span class="material-icons">brightness_6</span> Tema
+    </button>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
 </body>
 </html>
